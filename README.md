@@ -1,7 +1,9 @@
 # azure-cli-deploy-vm-for-workshop
-This script permits to deploy quickly several Ubuntu VM with Docker Engine on an Azure subscription. Its very usefull for a workshop. It's compatible with easytravel on docker. Usefull to deploy quickly a Dynatrace training environment.
+This script permits to deploy quickly several Ubuntu VM with Docker Engine on an Azure subscription.
+It's very usefull for a workshop. It's compatible with easytravel on docker. Usefull to deploy quickly a Dynatrace training environment.
 
-from your azure subscription, open the cli
+Open your azure subscription, https://portal.azure.com/  
+Open cli like describe here :
 ![azurecli](azurecli.png)
 
 and use this command :  
