@@ -21,7 +21,7 @@ git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
 cd dynatracelab_easytraveld  
 sudo docker-compose up -d**  
 
-test easytravel with http://"<hostname>".westeurope.cloudapp.azure.com
+test easytravel with http://\<hostname\>.westeurope.cloudapp.azure.com
 
 to reatsrt easytravel use these commands  
 **cd dynatracelab_easytraveld  
