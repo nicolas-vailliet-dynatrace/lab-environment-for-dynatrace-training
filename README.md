@@ -23,7 +23,7 @@ sudo docker-compose up -d**
 
 test easytravel with http://\<hostname\>.westeurope.cloudapp.azure.com
 
-to reatsrt easytravel use these commands  
+to restart easytravel use these commands  
 **cd dynatracelab_easytraveld  
 docker-compose down  
 sudo docker-compose up -d**  
