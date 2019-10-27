@@ -10,5 +10,21 @@ and use this command :
 **git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git  
 cd azure-cli-deploy-vm-for-workshop  
 chmod +x azure-cli-deploy-vm-for-workshop.sh  
-./azure-cli-deploy-vm-for-workshop.sh**  
+./azure-cli-deploy-vm-for-workshop.sh  
+**  
 
+to deploy easytravel on each VM  
+go to putty  
+
+and apply these commands  
+**sudo apt-get install git  
+git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
+cd dynatracelab_easytraveld  
+sudo docker-compose up -d  
+**
+
+to reatsrt easytravel use these commands  
+**cd dynatracelab_easytraveld  
+docker-compose down  
+sudo docker-compose up -d  
+**
