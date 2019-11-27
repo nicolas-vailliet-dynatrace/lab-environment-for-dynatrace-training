@@ -2,7 +2,7 @@
 This script permits to deploy quickly several Ubuntu VM with Docker Engine on an Azure subscription. It's very usefull for a workshop. It's compatible with easytravel on docker. Usefull to deploy quickly a Dynatrace training environment.
 
 Open your azure subscription, https://portal.azure.com/  
-Open azurecli like describe here :  
+Open your azure cli like described here :  
 ![azurecli](azurecli.png)
 
 to deploy several ubuntu VM on Azure, use this command on azurecli:  
