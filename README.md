@@ -16,7 +16,7 @@ hostname : dttrainingjll00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd
 hostname : dttrainingjll01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
 
 
-Go to the VM with putty and deploy easytravel on each VM with these commands
+Go to the VM with putty and deploy easytravel on each VM with these commands:   
 **sudo apt-get install git  
 git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
 cd dynatracelab_easytraveld  
