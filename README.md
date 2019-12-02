@@ -8,6 +8,7 @@ Open your azure cli like described here :
 **DEPLOY Ubuntu VM**
 
 to deploy several ubuntu VM on Azure, use this command on azurecli:  
+
     git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git  
     cd azure-cli-deploy-vm-for-workshop  
     chmod +x azure-cli-deploy-vm-for-workshop.sh  
