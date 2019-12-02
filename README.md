@@ -4,10 +4,9 @@ This script permits to deploy quickly several Ubuntu VM with Docker Engine on an
 Open your azure subscription, https://portal.azure.com/  
 Open your azure cli like described here :  
 ![azurecli](azurecli.png)
-
-**DEPLOY Ubuntu VM**
-
-to deploy several ubuntu VM on Azure, use this command on azurecli:  
+  
+  
+**DEPLOY Ubuntu VM** : Go to your Azure Cli and apply these commands:   
 
     git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git  
     cd azure-cli-deploy-vm-for-workshop  
@@ -18,10 +17,9 @@ to deploy several ubuntu VM on Azure, use this command on azurecli:
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
 VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
 VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
-
-
-**EASYTRAVEL LAB**
-Go to the VM with putty and deploy easytravel on each VM with these commands:   
+  
+  
+**EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands:   
    
     sudo apt-get install git -y  
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
@@ -39,10 +37,9 @@ to restart easytravel use these commands on each VM :
     sudo docker-compose up -d  
 
 at the end of the workshop, open your azure portal and delete the ressource groups.  
-
-**KUBERNETES LAB**
-
-Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
+  
+  
+**KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
     
     sudo apt-get install git -y  
     git clone https://github.com/JLLormeau/dynatracelab_azure-voting-app-redis.git  
