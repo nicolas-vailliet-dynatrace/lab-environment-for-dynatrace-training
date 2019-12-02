@@ -18,7 +18,7 @@ Here is the example for 2 VM with the default hostnames and credentials:
 VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com & user = USER00 & Pwd = Dynatrace@2019  
 VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com & user = USER01 & Pwd = Dynatrace@2019  
   
-**INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands (about 2 minutes per VM):   
+**INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands (about 2 minutes to install on each VM):   
    
     sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
@@ -38,7 +38,7 @@ to restart easytravel use these commands on each VM :
 at the end of the workshop, open your azure portal and delete the ressource groups.  
   
   
-**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command (about 20 minutes per VM):
+**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command (about 20 minutes to install on each VM):
     
     sudo apt-get install git -y
     cd;if [ -d "./dynatracelab_azure-voting-app-redis" ];then rm -rf ./dynatracelab_azure-voting-app-redis;fi
