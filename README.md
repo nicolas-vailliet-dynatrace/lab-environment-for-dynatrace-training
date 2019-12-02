@@ -48,7 +48,7 @@ at the end of the workshop, delete the labs ressource groups (VM).
 
 at the end of the workshop, delete the labs ressource groups (VM, ACR et AKS).
 
-**DELETE LABS RESSOURCE GROUP** : Go to your Azure Cli and apply these commands (follow the instruction) you will delete only your LAB Ressource Group
+**DELETE LABS RESSOURCE GROUP** : Go to your Azure Cli and apply these commands (follow the instruction) you will only delete your labs ressource groups.
 
     cd;cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-delete-labs-ressource-group.sh
     ./azure-cli-delete-labs-ressource-group.sh
