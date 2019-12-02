@@ -38,7 +38,7 @@ hostname : dttrainingjll01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd
 
 **KUBERNETES LAB**
 
-    Go to the VM with putty and deploy easytravel on each VM with this command:
+    Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
     
     curl https://raw.githubusercontent.com/JLLormeau/dynatracelab_azure-voting-app-redis/master/deploy-aks-cluster-with-azure-voting-app.sh  
 
