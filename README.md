@@ -8,7 +8,6 @@ Open your azure cli like described here :
   
 **DEPLOY Ubuntu VM** : Go to your Azure Cli and apply these commands:   
 
-    sudo apt-get install git -y
     cd;if [ -d "./azure-cli-deploy-vm-for-workshop" ];then rm -rf ./azure-cli-deploy-vm-for-workshop;fi
     git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git
     cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-deploy-vm-for-workshop.sh
