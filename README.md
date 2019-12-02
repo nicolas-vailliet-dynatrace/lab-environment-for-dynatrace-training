@@ -14,7 +14,8 @@ Open your azure cli like described here :
     cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-deploy-vm-for-workshop.sh
     ./azure-cli-deploy-vm-for-workshop.sh
       
-You will create several ubuntu VM with the size = Standard_F1 (1 CPU; 2GB RAM; 16 GB Disk; 0,0420€/hour). Here is the example for 2 VM with the hostname=dynatracelab20191202140023 :
+You can create several ubuntu VM with the size = Standard_F1 (1 CPU; 2GB RAM; 16 GB Disk; 0,0420€/hour).  
+Here is the example for 2 VM with the hostname=dynatracelab20191202140023 :
 VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com & user = USER00 & Pwd = Dynatrace@2019  
 VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com & user = USER01 & Pwd = Dynatrace@2019  
   
