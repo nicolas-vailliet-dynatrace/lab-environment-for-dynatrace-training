@@ -40,7 +40,7 @@ to restart easytravel use these commands on each VM :
 at the end of the workshop, delete the labs ressource groups (VM).  
   
   
-**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command (installation = about 20 minutes - skip the warning):
+**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command - skip the warning (installation = about 20 minutes - if you lose your session, you can run the script again):
     
     sudo apt-get install git -y
     cd;if [ -d "./dynatracelab_azure-voting-app-redis" ];then rm -rf ./dynatracelab_azure-voting-app-redis;fi
