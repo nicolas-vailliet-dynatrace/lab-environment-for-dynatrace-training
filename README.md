@@ -15,8 +15,11 @@ Open your azure cli like described here :
     ./azure-cli-deploy-vm-for-workshop.sh
       
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
-VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
-VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
+VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com 
+with user = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
+  
+VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com 
+with user = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
   
   
 **INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands:   
