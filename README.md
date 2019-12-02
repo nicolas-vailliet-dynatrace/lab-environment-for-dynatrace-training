@@ -18,24 +18,26 @@ hostname : dttrainingjll01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd
 **EASYTRAVEL LAB**
 
     Go to the VM with putty and deploy easytravel on each VM with these commands:   
-    **sudo apt-get install git -y  
+    sudo apt-get install git -y  
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
     cd dynatracelab_easytraveld  
-    sudo docker-compose up -d**  
+    sudo docker-compose up -d  
 
     In thise example, we create 2 easytravel application :  
     http://dttrainingjll00.westeurope.cloudapp.azure.com  
     http://dttrainingjll01.westeurope.cloudapp.azure.com  
 
     to restart easytravel use these commands on each VM :  
-    **cd dynatracelab_easytraveld  
+    cd dynatracelab_easytraveld  
     docker-compose down  
-    sudo docker-compose up -d**  
+    sudo docker-compose up -d  
 
     at the end of the workshop, open your azure portal and delete the ressource groups.  
 
 **KUBERNETES LAB**
 
     Go to the VM with putty and deploy easytravel on each VM with this command:   
-    **curl https://raw.githubusercontent.com/JLLormeau/dynatracelab_azure-voting-app-redis/master/deploy-aks-cluster-with-azure-voting-app.sh**  
-    
+    curl https://raw.githubusercontent.com/JLLormeau/dynatracelab_azure-voting-app-redis/master/deploy-aks-cluster-with-azure-voting-app.sh  
+
+    at the end of the workshop, open your azure portal and delete the ressource groups for the VM, for the ACR and for the AKS.  
+
