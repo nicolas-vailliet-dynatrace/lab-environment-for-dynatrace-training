@@ -13,7 +13,7 @@ Open your azure cli like described here :
     chmod +x azure-cli-deploy-vm-for-workshop.sh  
     ./azure-cli-deploy-vm-for-workshop.sh  
       
-
+      
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
 VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
 VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
