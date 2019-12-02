@@ -5,6 +5,8 @@ Open your azure subscription, https://portal.azure.com/
 Open your azure cli like described here :  
 ![azurecli](azurecli.png)
 
+**DEPLOY Ubuntu VM**
+
 to deploy several ubuntu VM on Azure, use this command on azurecli:  
 **git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git  
 cd azure-cli-deploy-vm-for-workshop  
@@ -14,6 +16,7 @@ chmod +x azure-cli-deploy-vm-for-workshop.sh
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
 VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
 VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
+
 
 **EASYTRAVEL LAB**
 
