@@ -2,8 +2,8 @@
 read DOMAIN
 read NBVM
 read AKS
-if [ $AKS = "Y" ] || [ $AKS = "y" ]
-then
+#if [ $AKS = "Y" ] || [ $AKS = "y" ]
+#then
 	for ((i=0; i<$NBVM; ++i));
 		do
 			USER='USER0'$i
@@ -14,11 +14,11 @@ then
 			az group delete --name $ACR_RESSOURCE_GROUP
 			az group delete --name $AKS_RESSOURCE_GROUP
 		done
-else
-	for ((i=0; i<$NBVM; ++i));
-		do
-			USER='USER0'$i
-			VM_RESSOURCE_GROUP=$DOMAIN_NAME'_'$USER
-			az group delete --name $VM_RESSOURCE_GROUP
-		done
-fi	
+#else
+#	for ((i=0; i<$NBVM; ++i));
+#		do
+#			USER='USER0'$i
+#			VM_RESSOURCE_GROUP=$DOMAIN_NAME'_'$USER
+#			az group delete --name $VM_RESSOURCE_GROUP
+#		done
+#fi	
