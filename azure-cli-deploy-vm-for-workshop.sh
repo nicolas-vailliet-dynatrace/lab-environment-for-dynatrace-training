@@ -9,8 +9,12 @@ LOCATION='westeurope'
 SIZE='Standard_F1'
 
 echo "Create several Ubuntu VM with Docker Engine on Azure - from JLL version 1.0"
-echo "How many VM ? 1, 2 ... 8 ?"
+echo "How many VM ? 1, 2 ... 8 ? - default 1"
 read NBVM
+if [[ -z $NBVM ]]
+then
+	NBVM=1
+fi
 echo "What is the name of the domain ? must be unique and only [a-z0-9] lower case - default : $DOMAIN_NAME_DEFAULT " 
 read DOMAIN_NAME
 if [[ -z $DOMAIN_NAME ]]
@@ -22,9 +26,13 @@ do
 	echo 'hostname : '$DOMAIN_NAME'0'$i'.'$LOCATION'.cloudapp.azure.com with usr = USER0'$i' & Pwd = '$PASSWORD' & Size = '$SIZE''
 done
 echo ""
-echo "Continue (Y/N)"
+echo "Continue (Y/N) - default Y"
 read Response
-if [ -z $DOMAIN_NAME ] ||[ $Response = "Y" ] || [ $Response = "y" ]
+if [[ -z $Response ]]
+then
+	Response="Y"
+fi
+if [ $Response = "Y" ] || [ $Response = "y" ]
 then
 	#create VM
 	for ((i=0; i<$NBVM; ++i));
