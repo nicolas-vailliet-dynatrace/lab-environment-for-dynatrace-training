@@ -1,5 +1,5 @@
 #!/bin/bash
-#set variables 
+#delete process group
 #NBVM = nb de VM
 #DOMAIN_NAME = must be unique only [a-z] lower case
 TIME=`date +%Y%m%d%H%M%S`
