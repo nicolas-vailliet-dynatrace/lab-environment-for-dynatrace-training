@@ -39,7 +39,7 @@ then
 		echo 'create vm : ' $DOMAIN'.'$LOCATION'.cloudapp.azure.com'
 		az group deployment create \
 			--resource-group $RESSOURCE_GROUP \
-			--template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/docker-simple-on-ubuntu/azuredeploy.json \
+			--template-uri https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop/blob/master/azuredeploy.json \
 			--parameters  adminUsername="$USER" adminPasswordOrKey="$PASSWORD" authenticationType="password" dnsNameForPublicIP="$DOMAIN" vmSize="$SIZE";
 	done
 fi
