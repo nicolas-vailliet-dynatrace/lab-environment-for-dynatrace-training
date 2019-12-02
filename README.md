@@ -19,7 +19,7 @@ VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynat
 VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
   
   
-**EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands:   
+**INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands:   
    
     sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
@@ -39,7 +39,7 @@ to restart easytravel use these commands on each VM :
 at the end of the workshop, open your azure portal and delete the ressource groups.  
   
   
-**KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
+**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
     
     sudo apt-get install git -y
     cd;if [ -d "./dynatracelab_azure-voting-app-redis" ];then rm -rf ./dynatracelab_azure-voting-app-redis;fi
