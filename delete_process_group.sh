@@ -1,6 +1,7 @@
 #!/bin/bash
 read DOMAIN
 read NBVM
+read AKS
 echo "continue (Y/N)"
 read Response
 if [ $Response = "N" ] || [ $Response = "n" ]
