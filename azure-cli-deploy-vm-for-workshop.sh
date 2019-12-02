@@ -9,7 +9,7 @@ LOCATION='westeurope'
 SIZE='Standard_F1'
 
 echo "Create several Ubuntu VM with Docker Engine on Azure - from JLL version 1.0"
-echo "How many VM ? 1, 2 ... 8 ? - default 1"
+echo "How many VM ? 1, 2 ... 8 ? - default : 1"
 read NBVM
 if [[ -z $NBVM ]]
 then
@@ -26,7 +26,7 @@ do
 	echo 'hostname : '$DOMAIN_NAME'0'$i'.'$LOCATION'.cloudapp.azure.com with usr = USER0'$i' & Pwd = '$PASSWORD' & Size = '$SIZE''
 done
 echo ""
-echo "Continue (Y/N) - default Y"
+echo "Continue (Y/N) - default : Y"
 read Response
 if [[ -z $Response ]]
 then
