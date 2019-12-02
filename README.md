@@ -15,8 +15,8 @@ Open your azure cli like described here :
     ./azure-cli-deploy-vm-for-workshop.sh
       
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
-VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
-VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
+VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
+VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
   
   
 **INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands:   
@@ -27,8 +27,8 @@ VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dyna
     sudo docker-compose up -d
 
 In thise example, we create 2 easytravel application :  
-http://dttrainingjll00.westeurope.cloudapp.azure.com  
-http://dttrainingjll01.westeurope.cloudapp.azure.com  
+http://dynatracelab2019120214002300.westeurope.cloudapp.azure.com  
+http://dynatracelab2019120214002301.westeurope.cloudapp.azure.com  
 
 to restart easytravel use these commands on each VM :  
     
