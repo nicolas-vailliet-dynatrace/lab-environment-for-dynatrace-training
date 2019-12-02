@@ -16,6 +16,7 @@ hostname : dttrainingjll00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd
 hostname : dttrainingjll01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dynatrace@2019 & Size = Standard_F1  
 
 **EASYTRAVEL LAB**
+
     Go to the VM with putty and deploy easytravel on each VM with these commands:   
     **sudo apt-get install git -y  
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
@@ -34,7 +35,7 @@ hostname : dttrainingjll01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd
     at the end of the workshop, open your azure portal and delete the ressource groups.  
 
 **KUBERNETES LAB**
+
     Go to the VM with putty and deploy easytravel on each VM with this command:   
-    **curl https://raw.githubusercontent.com/JLLormeau/dynatracelab_azure-voting-app-redis/master/deploy-aks-cluster-with-azure-voting-app.sh
-    **
+    **curl https://raw.githubusercontent.com/JLLormeau/dynatracelab_azure-voting-app-redis/master/deploy-aks-cluster-with-azure-voting-app.sh**  
     
