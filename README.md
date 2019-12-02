@@ -13,6 +13,7 @@ Open your azure cli like described here :
     git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git
     cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-deploy-vm-for-workshop.sh
     ./azure-cli-deploy-vm-for-workshop.sh
+    echo
       
       
       
