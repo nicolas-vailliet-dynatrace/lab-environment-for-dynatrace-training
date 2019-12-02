@@ -3,7 +3,7 @@
 #NBVM = nb de VM
 #DOMAIN_NAME = must be unique only [a-z] lower case
 TIME=`date +%Y%m%d%H%M%S`
-DOMAIN_NAME_DEFAULT='dttraining'$TIME
+DOMAIN_NAME_DEFAULT='dynatracelab'$TIME
 PASSWORD='Dynatrace@2019'
 LOCATION='westeurope'
 SIZE='Standard_F1'
@@ -24,7 +24,7 @@ done
 echo ""
 echo "Continue (Y/N)"
 read Response
-if [ $Response = "Y" ] || [ $Response = "y" ]
+if [ -z $DOMAIN_NAME ] ||[ $Response = "Y" ] || [ $Response = "y" ]
 then
 	#create VM
 	for ((i=0; i<$NBVM; ++i));
