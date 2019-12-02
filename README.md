@@ -13,6 +13,7 @@ to deploy several ubuntu VM on Azure, use this command on azurecli:
     cd azure-cli-deploy-vm-for-workshop  
     chmod +x azure-cli-deploy-vm-for-workshop.sh  
     ./azure-cli-deploy-vm-for-workshop.sh  
+      
 
 You can create several ubuntu VM, for example for 2 VM with this domain name = dttrainingjll, we will create on azure these 2 VM :  
 VM1 : dttraining00.westeurope.cloudapp.azure.com with usr = USER00 & Pwd = Dynatrace@2019 & Size = Standard_F1  
@@ -48,6 +49,7 @@ Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from ea
     cd dynatracelab_azure-voting-app-redis  
     chmod +x deploy-aks-cluster-with-azure-voting-app.sh  
     ./deploy-aks-cluster-with-azure-voting-app.sh  
+      
 
 at the end of the workshop, open your azure portal and delete the ressource groups for the VM, for the ACR and for the AKS.  
 
