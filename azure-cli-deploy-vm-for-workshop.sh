@@ -2,7 +2,8 @@
 #set variables 
 #NBVM = nb de VM
 #DOMAIN_NAME = must be unique only [a-z] lower case
-DOMAIN_NAME_DEFAULT='dttrainingjll'
+TIME=`date +%Y%m%d%H%M%S`
+DOMAIN_NAME_DEFAULT='dttraining'$TIME
 PASSWORD='Dynatrace@2019'
 LOCATION='westeurope'
 SIZE='Standard_F1'
@@ -10,7 +11,7 @@ SIZE='Standard_F1'
 echo "Create several Ubuntu VM with Docker Engine on Azure - from JLL version 1.0"
 echo "How many VM ? 1, 2 ... 8 ?"
 read NBVM
-echo "What is the name of the domain ? must be unique and only [a-z] lower case - default : $DOMAIN_NAME_DEFAULT " 
+echo "What is the name of the domain ? must be unique and only [a-z0-9] lower case - default : $DOMAIN_NAME_DEFAULT " 
 read DOMAIN_NAME
 if [[ -z $DOMAIN_NAME ]]
 then
