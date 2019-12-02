@@ -46,5 +46,10 @@ at the end of the workshop, open your azure portal and delete the ressource grou
     cd dynatracelab_azure-voting-app-redis;chmod +x deploy-aks-cluster-with-azure-voting-app.sh
     ./deploy-aks-cluster-with-azure-voting-app.sh    
 
-at the end of the workshop, open your azure portal and delete the ressource groups for the VM, for the ACR and for the AKS.  
+at the end of the workshop, open your azure portal and delete the ressource groups for the VM, for the ACR and for the AKS.
 
+**DELETE LABS RESSOURCE GROUP** : Go to your Azure Cli and apply these commands (follow the instruction) you will delete only your LAB Ressource Group
+
+    cd;cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-delete-labs-ressource-group.sh
+    ./azure-cli-delete-labs-ressource-group.sh
+    
