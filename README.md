@@ -18,11 +18,11 @@ VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dyna
 **EASYTRAVEL LAB**
 
     Go to the VM with putty and deploy easytravel on each VM with these commands:   
-    
-            sudo apt-get install git -y  
-            git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
-            cd dynatracelab_easytraveld  
-            sudo docker-compose up -d  
+   
+**sudo apt-get install git -y  
+git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git  
+cd dynatracelab_easytraveld  
+sudo docker-compose up -d**  
 
     In thise example, we create 2 easytravel application :  
     http://dttrainingjll00.westeurope.cloudapp.azure.com  
@@ -30,9 +30,9 @@ VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dyna
 
     to restart easytravel use these commands on each VM :  
     
-            cd dynatracelab_easytraveld  
-            docker-compose down  
-            sudo docker-compose up -d  
+**cd dynatracelab_easytraveld  
+docker-compose down  
+sudo docker-compose up -d**  
 
     at the end of the workshop, open your azure portal and delete the ressource groups.  
 
@@ -40,11 +40,11 @@ VM2 : dttrainingj01.westeurope.cloudapp.azure.com with usr = USER01 & Pwd = Dyna
 
     Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command:
     
-            sudo apt-get install git -y  
-            git clone https://github.com/JLLormeau/dynatracelab_azure-voting-app-redis.git  
-            cd dynatracelab_azure-voting-app-redis  
-            chmod +x deploy-aks-cluster-with-azure-voting-app.sh  
-            ./deploy-aks-cluster-with-azure-voting-app.sh  
+**sudo apt-get install git -y  
+  git clone https://github.com/JLLormeau/dynatracelab_azure-voting-app-redis.git  
+  cd dynatracelab_azure-voting-app-redis  
+  chmod +x deploy-aks-cluster-with-azure-voting-app.sh  
+  ./deploy-aks-cluster-with-azure-voting-app.sh**  
 
     at the end of the workshop, open your azure portal and delete the ressource groups for the VM, for the ACR and for the AKS.  
 
