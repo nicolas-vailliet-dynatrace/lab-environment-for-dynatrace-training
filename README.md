@@ -19,7 +19,7 @@ VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com & user = USER00
 VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com & user = USER01 & Pwd = Dynatrace@2019  
 VM2 : dynatracelab2019120214002302.westeurope.cloudapp.azure.com & user = USER02 & Pwd = Dynatrace@2019  
   
-**INSTALL EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands (installation = about 2 minutes):   
+**INSTALL Docker EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands (installation = about 2 minutes):   
    
     sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
