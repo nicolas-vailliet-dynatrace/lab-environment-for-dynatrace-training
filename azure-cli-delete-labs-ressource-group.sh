@@ -10,7 +10,7 @@ then
         for ((i=0; i<$NBVM; ++i));
                 do
                         USER='USER0'$i
-                        VM_RESSOURCE_GROUP=$DOMAIN_NAME'_'$USER
+                        VM_RESSOURCE_GROUP=$DOMAIN_NAME'0'$i
                         ACR_RESSOURCE_GROUP='acr'$DOMAIN_NAME'0'$i
                         AKS_RESSOURCE_GROUP='MC_'$ACR_RESSOURCE_GROUP'_akscluster_westeurope'
                         echo "delete ressource group "$VM_RESSOURCE_GROUP
