@@ -38,7 +38,7 @@ then
 	for ((i=0; i<$NBVM; ++i));
 	do
 		USER='USER0'$i
-		RESSOURCE_GROUP=$DOMAIN_NAME'_'$USER
+		RESSOURCE_GROUP=$DOMAIN_NAME'0'$i
 		DOMAIN=$DOMAIN_NAME'0'$i
 		echo 'create ressource group : '  $RESSOURCE_GROUP
 		az group create \
