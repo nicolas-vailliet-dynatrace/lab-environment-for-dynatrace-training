@@ -37,7 +37,7 @@ to restart easytravel use these commands on each VM :
     docker-compose down
     sudo docker-compose up -d
 
-at the end of the workshop, delete the labs ressource groups (VM).  
+at the end of the workshop, delete the labs resource groups (VM).  
   
   
 **INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command - skip the warning (installation = about 20 minutes - if you lose your session, you can run the script again):
@@ -48,10 +48,10 @@ at the end of the workshop, delete the labs ressource groups (VM).
     cd dynatracelab_azure-voting-app-redis;chmod +x deploy-aks-cluster-with-azure-voting-app.sh
     ./deploy-aks-cluster-with-azure-voting-app.sh    
 
-at the end of the workshop, delete the labs ressource groups (VM, ACR et AKS).
+at the end of the workshop, delete the labs resource groups (VM, ACR et AKS).
 
-**DELETE LABS RESSOURCE GROUP** : Go to your Azure Cli and apply these commands (follow the instruction) you will only delete your labs ressource groups.
+**DELETE LABS RESOURCE GROUP** : Go to your Azure Cli and apply these commands (follow the instruction) you will only delete your labs resource groups.
 
-    cd;cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-delete-labs-ressource-group.sh
-    ./azure-cli-delete-labs-ressource-group.sh
+    cd;cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-delete-labs-resource-group.sh
+    ./azure-cli-delete-labs-resource-group.sh
     
