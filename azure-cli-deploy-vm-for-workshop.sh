@@ -38,16 +38,16 @@ then
 	for ((i=0; i<$NBVM; ++i));
 	do
 		USER='USER0'$i
-		RESSOURCE_GROUP=$DOMAIN_NAME'0'$i
+		RESOURCE_GROUP=$DOMAIN_NAME'0'$i
 		DOMAIN=$DOMAIN_NAME'0'$i
-		echo 'create ressource group : '  $RESSOURCE_GROUP
+		echo 'create resource group : '  $RESOURCE_GROUP
 		az group create \
-			--name $RESSOURCE_GROUP \
+			--name $RESOURCE_GROUP \
 			--location $LOCATION \
 			--tags $DOMAIN
 		echo 'create vm : ' $DOMAIN'.'$LOCATION'.cloudapp.azure.com'
 		az group deployment create \
-			--resource-group $RESSOURCE_GROUP \
+			--resource-group $RESOURCE_GROUP \
 			--template-uri https://raw.githubusercontent.com/JLLormeau/azure-cli-deploy-vm-for-workshop/master/azuredeploy.json \
 			--parameters  adminUsername="$USER" adminPasswordOrKey="$PASSWORD" authenticationType="password" dnsNameForPublicIP="$DOMAIN" vmSize="$SIZE";
 	done
