@@ -15,7 +15,7 @@ if [[ -z $NBVM ]]
 then
 	NBVM=1
 fi
-echo "What is the name of the project ? must be unique and only [a-z0-9] lower case - default : $DOMAIN_NAME_DEFAULT " 
+echo "What is the name of the project ? must be unique and only [a-z0-9] lower case (no - or _), default : $DOMAIN_NAME_DEFAULT " 
 read DOMAIN_NAME
 if [[ -z $DOMAIN_NAME ]]
 then
