@@ -4,7 +4,7 @@
 #DOMAIN_NAME = must be unique only [a-z] lower case
 TIME=`date +%Y%m%d%H%M%S`
 DOMAIN_NAME_DEFAULT='dynatracelab'$TIME
-PASSWORD='Dynatrace@2019'
+PASSWORD='Dynatrace@2020'
 LOCATION='westeurope'
 SIZE='Standard_F1'
 
