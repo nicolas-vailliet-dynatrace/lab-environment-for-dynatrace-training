@@ -3,7 +3,7 @@ This script permits to deploy quickly several Ubuntu VM with Docker Engine on an
 
 Open your azure subscription, https://portal.azure.com/  
 Open your azure cli like described here :  
-![azurecli](Azure_cli.png)
+![Azure-cli](Azure-cli.png)
   
   
 **DEPLOY Ubuntu VM** : Go to your Azure Cli and apply these commands (about 3 minutes per VM):   
