@@ -1,4 +1,4 @@
-# azure-cli-deploy-vm-for-workshop
+# Lab environment for dynatrace training
 This script permits to deploy quickly several Ubuntu VM with Docker Engine on an Azure subscription. It's very usefull for a workshop. It's compatible with easytravel on docker. Usefull to deploy quickly a Dynatrace training environment.
 
 Open your azure subscription, https://portal.azure.com/  
@@ -8,12 +8,12 @@ Open your azure cli like described here :
   
 **DEPLOY Ubuntu VM** : Go to your Azure Cli and apply these commands (about 3 minutes per VM):   
 
-    cd;if [ -d "./azure-cli-deploy-vm-for-workshop" ];then rm -rf ./azure-cli-deploy-vm-for-workshop;fi
-    git clone https://github.com/JLLormeau/azure-cli-deploy-vm-for-workshop.git
-    cd azure-cli-deploy-vm-for-workshop;chmod +x azure-cli-deploy-vm-for-workshop.sh
-    ./azure-cli-deploy-vm-for-workshop.sh
+    cd;if [ -d "./lab-environment-for-dynatrace-training" ];then rm -rf ./lab-environment-for-dynatrace-training;fi
+    git clone https://github.com/JLLormeau/lab-environment-for-dynatrace-training.git
+    cd lab-environment-for-dynatrace-training;chmod +x lab-environment-for-dynatrace-training.sh
+    ./lab-environment-for-dynatrace-training.sh
       
-You can create several ubuntu VM with the size = Standard_F1 (1 CPU; 2GB RAM; 16 GB Disk; 0,0420€/hour).  
+You can create several ubuntu VM with the size = Standard_B2s (2 CPU; 4GB RAM; 8 GB Disk; 0,04€/hour).  
 Here is the example for 3 VM with the default hostnames and credentials:  
 VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com & user = USER00 & Pwd = Dynatrace@2020  
 VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com & user = USER01 & Pwd = Dynatrace@2020  
