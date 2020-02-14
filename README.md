@@ -26,7 +26,8 @@ Go to the VM with putty and deploy easytravel on each VM with these commands (in
     sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
     cd dynatracelab_easytraveld
-    sudo docker-compose up -d
+    docker-compose up -d
+    docker-compose ps
 
 In thise example, we create 3 easytravel application :  
 http://dynatracelab2019120214002300.westeurope.cloudapp.azure.com  
@@ -37,7 +38,8 @@ to restart easytravel use these commands on each VM :
     
     cd dynatracelab_easytraveld
     docker-compose down
-    sudo docker-compose up -d
+    docker-compose up -d
+    docker-compose ps
 
 at the end of the workshop, delete the labs resource groups (VM).  
   
