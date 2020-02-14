@@ -19,7 +19,9 @@ VM1 : dynatracelab2019120214002300.westeurope.cloudapp.azure.com & user = USER00
 VM2 : dynatracelab2019120214002301.westeurope.cloudapp.azure.com & user = USER01 & Pwd = Dynatrace@2020  
 VM2 : dynatracelab2019120214002302.westeurope.cloudapp.azure.com & user = USER02 & Pwd = Dynatrace@2020  
   
-**INSTALL Docker EASYTRAVEL LAB** : Go to the VM with putty and deploy easytravel on each VM with these commands (installation = about 2 minutes):   
+**INSTALL Docker EASYTRAVEL LAB** : 
+Prerequisite : Ubuntu VM installed
+Go to the VM with putty and deploy easytravel on each VM with these commands (installation = about 2 minutes):   
    
     sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
@@ -40,7 +42,9 @@ to restart easytravel use these commands on each VM :
 at the end of the workshop, delete the labs resource groups (VM).  
   
   
-**INSTALL KUBERNETES LAB** : Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command - skip the warning (installation = about 20 minutes - if you lose your session, you can run the script again):
+**INSTALL KUBERNETES LAB** : 
+Prerequisite : Ubuntu VM installed
+Go to the VM with putty and deploy the AKS cluster fith Azure Voting App from each VM with this command - skip the warning (installation = about 20 minutes - if you lose your session, you can run the script again):
     
     sudo apt-get install git -y
     cd;if [ -d "./dynatracelab_azure-voting-app-redis" ];then rm -rf ./dynatracelab_azure-voting-app-redis;fi
