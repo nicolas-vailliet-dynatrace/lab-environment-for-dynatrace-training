@@ -23,7 +23,6 @@ VM2 : dynatracelab2019120214002302.westeurope.cloudapp.azure.com & user = USER02
 Prerequisite : Ubuntu VM installed
 Go to the VM with putty and deploy easytravel on each VM with these commands (installation = about 2 minutes):   
    
-    sudo apt-get install git -y
     git clone https://github.com/JLLormeau/dynatracelab_easytraveld.git
     cd dynatracelab_easytraveld
     docker-compose up -d
