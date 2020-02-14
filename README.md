@@ -10,7 +10,7 @@ Open your azure cli like described here :
 
     cd;if [ -d "./lab-environment-for-dynatrace-training" ];then rm -rf ./lab-environment-for-dynatrace-training;fi
     git clone https://github.com/JLLormeau/lab-environment-for-dynatrace-training.git
-    cd lab-environment-for-dynatrace-training;chmod +x lab-environment-for-dynatrace-training.sh
+    cd lab-environment-for-dynatrace-training;chmod +x azure-cli-deploy-vm-for-workshop.sh
     ./azure-cli-deploy-vm-for-workshop.sh
       
 You can create several ubuntu VM with the size = Standard_B2s (2 CPU; 4GB RAM; 8 GB Disk; 0,04€/hour).  
