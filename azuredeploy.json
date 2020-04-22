@@ -205,6 +205,24 @@
           
         }
       }
-    }
+    },
+	{
+	  "type": "Microsoft.Compute/virtualMachines/extensions",
+	  "apiVersion": "2019-12-01",
+	  "name": "[concat(variables('vmName'),'/', 'InstallShellInABox')]",
+	  "location": "[parameters('location')]",
+	  "dependsOn": [
+		  "[concat('Microsoft.Compute/virtualMachines/',variables('vmName'))]"
+	  ],
+	  "properties": {
+		  "publisher": "Microsoft.Compute",
+		  "type": "CustomScriptExtension",
+		  "typeHandlerVersion": "1.7",
+		  "autoUpgradeMinorVersion":true,
+		  "settings": {
+			"commandToExecute": "apt-get install shellinabox && sed -i 's/4200/443/g' /etc/default/shellinabox && service shellinabox restart"
+		  }
+	  }
+	}
   ]
 }
